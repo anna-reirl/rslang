@@ -1,0 +1,248 @@
+body {
+  background-image: url("../2756421.jpg");
+  max-width: 100%;
+  height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.animate-ul {
+  position: relative;
+  margin-top: 70px;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%);
+}
+
+.animate-ul li {
+  list-style: none;
+  letter-spacing: 15px;
+  font-size: 5em;
+  font-family: fantasy;
+  color: #484848;
+  animation: ani 1.2s linear infinite;
+}
+
+.animate-ul li:nth-child(1) {
+  animation-delay: .2s;
+}
+
+.animate-ul li:nth-child(2) {
+  animation-delay: .6s;
+}
+
+.animate-ul li:nth-child(3) {
+  animation-delay: .8s;
+}
+
+.animate-ul li:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.animate-ul li:nth-child(5) {
+  animation-delay: 1.4s;
+}
+
+.animate-ul li:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
+.animate-ul li:nth-child(7) {
+  animation-delay: 1.12s;
+}
+
+@keyframes ani {
+  0% {
+    color: #44848C;
+    text-shadow: none;
+  }
+  90% {
+    color: #44848C;
+    text-shadow: none;
+  }
+  100% {
+    color: #fff900;
+    text-shadow: 0 0 7px #fff900,0 0 70px #fff123;
+  }
+}
+
+.title {
+  position: absolute;
+  top: 120px;
+  text-align: center;
+  z-index: 1;
+  transition: top .5s ease;
+}
+
+.container:hover .title {
+  top: 180px;
+}
+
+.container .button {
+  opacity: 1;
+}
+
+.button {
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  width: auto;
+  height: 50px;
+  top: 350px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity .35s ease;
+  outline: none;
+  line-height: 45px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: .3s;
+  padding: 3px 20px;
+}
+
+.button:hover {
+  background: #2EE59D;
+  box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+}
+
+.button a {
+  text-decoration: none;
+  text-align: center;
+  z-index: 1;
+  color: #524f4e;
+  font-size: 19px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+/* page end */
+/* other page start */
+/* .window {
+
+} */
+.row {
+  margin: 20px auto;
+  font-size: 30px;
+}
+
+.gameflow {
+  min-width: auto;
+}
+
+.card {
+  width: 28rem;
+  background: #fff;
+  /* border-left: solid 20px #32a16e; */
+  border-radius: 18px;
+  box-shadow: 0px 4.5px 14px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+}
+
+.btn_true {
+  color: #ffffff;
+  background-color: #3c9e49;
+  min-width: 150px;
+  border-radius: 10px;
+}
+
+.btn_false {
+  color: #ffffff;
+  background-color: #9e3c3c;
+  min-width: 150px;
+  border-radius: 10px;
+}
+
+.btn_true:hover {
+  cursor: pointer;
+}
+
+.btn_false:hover {
+  cursor: pointer;
+}
+
+.key_false {
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 34px;
+  box-shadow: 0px 5px 10px #131518;
+  transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  border-bottom: 4px solid #d9d9d9;
+  margin: 30px;
+  padding: 0 40px;
+  width: 105px;
+}
+
+.key_false:hover {
+  box-shadow: 0px 15px 25px -5px #32a16e;
+  transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.key_true {
+  background-color: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 34px;
+  box-shadow: 0px 5px 10px #131518;
+  transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5px;
+  border-bottom: 4px solid #d9d9d9;
+  margin: 30px;
+  padding: 0 40px;
+  width: 105px;
+}
+
+.key_true:hover {
+  box-shadow: 0px 15px 25px -5px #32a16e;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.timer {
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 40px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.level {
+  cursor: pointer;
+  margin: 10px auto;
+  height: 30px;
+  width: 30px;
+  border: #cfcfcf solid 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-top: 5px;
+  padding-top: 2px;
+  box-shadow: 0px 15px 25px -5px #32a16e;
+  font-size: 15px;
+}
+
+.level__active {
+  height: 40px;
+  width: 40px;
+  border: #32a16e solid 2px;
+  font-size: 24px;
+  padding-top: 0px;
+}
+
+.total-points {
+  font-size: 50px;
+  color: #fff;
+}

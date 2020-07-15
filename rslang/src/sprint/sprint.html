@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sprint</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <header class="container-fluid"></header>
+    <main class="container-fluid main__container"><div class="container container-fluid starting-window wrapper">
+      <ul class="title animate-ul">
+          <li>S</li>
+          <li>P</li>
+          <li>R</li>
+          <li>I</li>
+          <li>N</li>
+          <li>T</li>
+        </ul>
+        <div class="overlay"></div>
+        <div class="button start-game_button"><a href="#">Начать</a></div>
+  </div>
+  
+  <div class="container-fluid wrapper game-window hidden">
+      <div class="row align-items-center">
+
+        <div class="col  gameflow">
+          <div class="row justify-content-center score">
+            <div class="col align-self-center">
+              <p class="total-points">0</p>
+            </div>
+            <div class="col">
+              <div class="row justify-content-center timer"></div>
+            </div>
+          </div>
+
+          <div class="card  text-center">
+              <div class="card-header">
+                  <h5 class="card-title row justify-content-center points">10</h5>
+              </div>
+              <div class="card-body">
+                
+                <p class="card-text row justify-content-center word_ru"></p>
+                <p class="row justify-content-center word_en"></p>
+                
+              </div>
+              <div class="card-footer text-muted">
+                  <div class="row justify-content-around buttons">
+                      <div class="col btn btn_false">Неверно</div>
+                      <div class="col btn btn_true">Верно</div>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row justify-content-center keys">
+                <div class="col key_false">&larr;</div>
+                <div class="col key_true">&rarr;</div>
+              </div>
+          </div>
+          <div class="row difficulty">
+            <div class="row justify-content-center level">6</div>
+            <div class="row justify-content-center level">5</div>
+            <div class="row justify-content-center level">4</div>
+            <div class="row justify-content-center level">3</div>
+            <div class="row justify-content-center level">2</div>
+            <div class="row justify-content-center level level__active">1</div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="container container-fluid statisic-window wrapper hidden">
+      <div class="card  text-center">
+        <div class="card-header">
+            <h4 class="statistic-header"></h4>
+        </div>
+        <div class="card-body statistic">
+          
+          
+        </div>
+        <div class="card-footer text-muted">
+          <div class="button start-again_button"><a href="#">Еще раз</a></div>
+        </div>
+    </div>
+    </div>
+  </main>
+</body>
+</html>

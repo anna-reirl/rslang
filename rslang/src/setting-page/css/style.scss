@@ -1,0 +1,495 @@
+@import '../../assets/scss/style.scss';
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+$darkBlue: #1a3b71;
+$beige: #f7f1ec;
+$darkBeige: #efe6e1;
+$white: #ffffff;
+$black: #000000;
+$red: #dd5145;
+$grey: #cccccc;
+
+h3 {
+	font-size: 20px;
+	line-height: 1;
+	font-weight: bold;
+	margin: 0px;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0px;
+}
+
+.section_setting {
+	width: 100%;
+	transition: .3s;
+}
+
+.section_setting.active {
+	display: block;
+}
+
+.section_setting.none {
+	display: none;
+}
+
+.block_setting_padding {
+	max-width: 100%;
+	min-width: 200px;
+	margin: auto;
+	transition: .3s;
+	opacity: 0;
+}
+
+.block_setting_padding.active {
+	opacity: 1;
+}
+
+.block_setting {
+	background-color: $white;
+	margin: auto;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	transition: .3s;
+	box-shadow: inset 0px 0px 10px $grey;
+	border: 1px solid $darkBeige;
+}
+
+/* -----------block_button_setting------------ */
+
+.block_button_setting {
+	width: 30%;
+	background-color: $beige;
+	display: flex;
+	flex-direction: column;
+}
+
+.button_setting {
+	width: 100%;
+	border: none;
+	padding: 15px 0px;
+	border-bottom: 1px solid $darkBeige;
+	background-color: $beige;
+	cursor: pointer;
+	color: $darkBlue;
+	transition: .3s;
+	outline-style: none;
+	font-size: 14px;
+	line-height: 1;
+	font-weight: 600;
+}
+
+.button_setting.active {
+	background-color: $white;
+	color: $darkBlue;
+}
+
+.button_setting:hover {
+	background-color: $white;
+}
+
+/* -----------block_content_setting------------ */
+
+.block_content_setting {
+	width: 70%;
+	color: $darkBlue;
+}
+
+.container_settings {
+	padding: 20px 40px;
+	display: none;
+	flex-direction: column;
+}
+
+.wraper_setting_content {
+	height: 75vh;
+	max-height: 75vh;
+	overflow: auto;
+	padding-top: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 3px;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: $white;
+}
+
+::-webkit-scrollbar-thumb {
+	height: 50px;
+	background-color: $grey;
+	border-radius: 3px;
+}
+
+.container_settings.active {
+	display: flex;
+}
+
+.block_change_setting {
+	padding: 20px 0px;
+}
+
+.user_full_name,
+.user_email {
+	display: flex;
+	align-items: center;
+	padding: 25px 5px 10px;
+	border-bottom: 2px solid $darkBeige;
+}
+
+.user_icon {
+	background-image: url(../images/user_ic.png);
+}
+
+.user__email_icon {
+	background-image: url(../images/email_ic.png);
+}
+
+.user_icon,
+.user__email_icon {
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.content {
+	border-bottom: 1px solid $darkBeige;
+}
+
+.informations {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 10px 5px;
+}
+
+.informations:hover {
+	background-color: $beige;
+}
+
+.change {
+	display: none;
+	flex-direction: column;
+	padding: 20px 5px 20px 0px;
+	position: relative;
+}
+
+.change.active {
+	display: flex;
+}
+
+.castle,
+.eye {
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/castle.png);
+	margin-right: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+}
+
+.eye {
+	background-image: url(../images/eyeoff.png);
+	right: -15px;
+	cursor: pointer;
+}
+
+.eye:hover {
+	background-image: url(../images/eye.png);
+	right: -15px;
+	cursor: pointer;
+}
+
+.input_password {
+	font-size: 12px;
+	border: none;
+	border-bottom: 2px solid $darkBlue;
+	padding: 5px 25px;
+	outline-style: none;
+	margin-bottom: 10px;
+}
+
+.input_password::placeholder {
+	color: $darkBlue;
+	font-weight: 600;
+}
+
+.button_change {
+	min-width: 150px;
+	padding: 10px;
+	margin: auto 0px auto auto;
+	border-radius: 20px;
+	border: 1px solid $darkBlue;
+	background-color: $white;
+	color: $darkBlue;
+	cursor: pointer;
+	transition: .3s;
+	outline-style: none;
+	font-size: 12px;
+}
+
+.button_change:hover {
+	background-color: $darkBlue;
+	color: $white;
+}
+
+.p_change {
+	font-size: 12px;
+	margin: 0px;
+}
+
+.button_arrow {
+	width: 12px;
+	height: 12px;
+	background-image: url(../images/arrow.png);
+	margin-left: 15px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	transition: .3s;
+}
+
+.button_arrow.active {
+	transform: rotate(90deg);
+}
+
+.block_button_delete_user {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button_change.cancel,
+.button_change.delete {
+	width: 150px;
+	min-width: 120px;
+	margin: 0px;
+}
+
+.button_change.cancel{
+	margin-right: 5px;
+}
+
+.button_change.delete {
+	background-color: $white;
+	color: $darkBlue;
+}
+
+.button_change.delete:hover {
+	background-color: $red;
+	color: $white;
+}
+
+.change > h4,
+.change > .p_change {
+	padding-bottom: 10px;
+}
+
+.textarea_mistake {
+	padding: 10px;
+	resize: none;
+	outline: 0;
+	outline-offset: 0;
+	margin-bottom: 10px;
+	border: none;
+	font-size: 12px;
+	border-bottom: 2px solid $darkBlue;
+}
+
+.wraper_checkbox.radio {
+	position: relative;
+}
+
+label {
+	width: 90%;
+	margin: 0px;
+	line-height: 1;
+}
+
+.radio_input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: absolute;
+}
+
+.radio_label:before {
+	content: "";
+	display: block;
+	width: 13px;
+	height: 13px;
+	border: 1px solid $grey;
+	background-color: $white;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	transition: border .1s linear;
+}
+
+.radio_label:after {
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	background-color: $darkBlue;
+	border-radius: 50%;
+	opacity: 0;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.radio_input:checked + .radio_label:before {
+	border-color: $darkBlue;
+}
+
+.radio_input:checked + .radio_label:after {
+	opacity: 1;
+}
+
+/* --------------seeting game-------------- */
+
+.block_words,
+.block_info,
+.block_setting_button {
+	padding-bottom: 10px;
+}
+
+.setting_name {
+	color: $darkBlue;
+	text-align: end;
+	padding: 0px 5px 10px;
+	border-bottom: 3px solid $darkBlue;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#maxCards,
+#maxNewWords {
+	outline: 0;
+	outline-offset: 0;
+	font-size: 12px;
+	color: $darkBlue;
+	border: none;
+	border-bottom: 2px solid $darkBlue;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+.content.maxNewWords {
+	margin-top: 20px;
+}
+
+.padding_checkbox {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid $darkBlue;
+}
+
+.wraper_checkbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+input[type=checkbox] {
+	position: relative;
+	cursor: pointer;
+}
+
+input[type=checkbox]:before {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	top: 0;
+	left: 0;
+	border: 1px solid $darkBlue;
+	border-radius: 3px;
+	background-color: $white;
+}
+
+input[type=checkbox]:checked:after {
+	content: "";
+	display: block;
+	width: 7px;
+	height: 7px;
+	background-color: $darkBlue;
+	border-radius: 2px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+
+@media (max-width: 600px) {
+
+	.button_change.cancel,
+	.button_change.delete {
+		width: 45%;
+		min-width: 45%;
+	}
+
+	.block_setting {
+		flex-direction: column-reverse;
+	}
+
+	.container_settings{
+		padding: 10px;
+	}
+
+	.block_content_setting {
+		width: 100%;
+	}
+
+	.block_button_setting {
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.button_setting {
+		width: 33.33%;
+		border-bottom: none;
+		border-right: 1px solid $darkBeige;
+	}
+
+	@media (max-width: 360px) {
+
+		.container-fluid.main__container{
+			padding: 10px;
+		}
+
+		.block_setting {
+			min-height: 85vh;
+			border-radius: unset;
+			box-shadow: none;
+			border: none;
+		}
+	}
+}

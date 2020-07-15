@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Savannah</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+</head>
+
+<body class="savannah">
+    <header class="container-fluid"></header>
+    <main class="container-fluid main__container savannah">
+        <button type="button" class="close" aria-label="Close">
+            <span class = "close-button" aria-hidden="true" data-toggle="modal" data-target="#modalLoginAvatar">×</span>
+        </button>
+        <div class="modal fade" id="modalLoginAvatar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog cascading-modal modal-avatar " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="/assets/images/savannah/sad_face.svg" alt="avatar" class="rounded-circle img-responsive">
+                    </div>
+                    <div class="modal-body text-center mb-1">
+                        <h5 class="mt-1 mb-2 warning-header">Тренировка не закончена!</h5>
+                        <div class="md-form ml-0 mr-0 modal-info">
+                            <p>Если вы вернетесь к списку, ваши результаты не будут сохранены</p>
+                        </div>
+                        <div class="text-center mt-4">
+                            <button class="btn modal-btn btn-game-quit">Закрыть</button>
+                            <button class="btn modal-btn btn-cancellation" data-toggle="modal" data-target="#modalLoginAvatar">Отмена</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="savannah-start-page">
+            <p class="name-of-the-game">Саванна</p>
+            <p class="info-about-game">Тренировка Саванна развивает словарный запас. Чем больше слов ты узнаешь, тем больше очков опыта получишь.
+            </p>
+            <button class="btn btn-start">Начать</button>
+        </div>
+        <div class="page-loading" hidden>
+            <div class="cssload-loader">
+                <div class="cssload-inner cssload-one"></div>
+                <div class="cssload-inner cssload-two"></div>
+                <div class="cssload-inner cssload-three"></div>
+                <p class="countdown">3</p>
+            </div>
+            <div class="additional-information">
+                <p class="additional-information-icon"><i class="far fa-keyboard"></i></p>
+                <p class="additional-information-text">Используйте клавиши 1, 2, 3, 4, чтобы дать быстрый ответ</p>
+            </div>
+        </div>
+        <div class="savannah-game-page" hidden>
+            <p class="mute-sounds"><i class="fab fa-itunes-note"></i>
+                <div class="cross-out" hidden></div>
+            </p>
+            <div class="life-counter">
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-heart"></i>
+            </div>
+
+            <div class="right-answer-target">
+                <img src="../assets/images/savannah/glass.svg" alt="glass-image" class="glass-image">
+                <img src="../assets/images/savannah/water.png" alt="water-image" class="water-image" hidden>
+                <div class="answer-options row" hidden>
+                    <div class="possible-answer row-md-4"><span class="number-of-answer">1</span><span class="answer-text"></span></div>
+                    <div class="possible-answer row-md-4"><span class="number-of-answer">2</span><span class="answer-text"></span></div>
+                    <div class="possible-answer row-md-4"><span class="number-of-answer">3</span><span class="answer-text"></span></div>
+                    <div class="possible-answer row-md-4"><span class="number-of-answer">4</span><span class="answer-text"></span></div>
+                </div>
+                <p class="main-word">Chain</p>
+                <svg class="steam-animation hide-steam" viewBox="0 0 600 600">
+                    <defs>
+                        <symbol id="steam">
+                        <path class="steam"
+                                d="M 238 0
+                                    Q 218 39
+                                    238 78
+                                    Q 258 117
+                                    238 156
+                                    Q 218 195
+                                    238 234
+                                    Q 258 273
+                                    238 312
+                                    Q 218 351
+                                    238 390
+                                    Q 258 429
+                                    238 468"
+                            transform="translate(0 -60)" />
+                        </symbol>
+                    </defs>
+                <g transform="translate(50 50)">
+                    <use xlink:href="#steam" transform="translate(-75 0)" />
+                    <use xlink:href="#steam" />
+                    <use xlink:href="#steam" transform="translate(75 0)" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="statistic-modal-inner result-page" hidden>
+            <div class="result-info"></div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="overflow-auto result-info-text">
+                            <label for='wrong-result' class="wrong-result-label">ОШИБОК: </label>
+                            <div class="wrong-number"></div>
+                            <ul id='wrong-result'>
+                            </ul>
+                            <label for='know-result' class="know-result-label">ЗНАЮ:</label>
+                            <div class="know-number"></div>
+                            <ul id='know-result'>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="result-control-buttons">
+                <button class="btn modal-btn btn-proceed"><a class = "result-link">Продолжить тренировку</a></button>
+                <button class="btn modal-btn btn-game-quit"><a class = "result-link">К списку тренировок</a></button>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+</body>
+
+</html>

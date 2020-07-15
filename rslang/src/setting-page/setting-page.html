@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Setting</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <header class="container-fluid"></header>
+    <main class="container-fluid main__container">
+        <div class="section_setting active">
+            <div class="block_setting_padding active">
+                <div class="block_setting">
+                    <div class="block_button_setting">
+                        <input type="button" value="Профиль" class="button_setting profile active">
+                        <input type="button" value="Настройки" class="button_setting setting">
+                    </div>
+                    <div class="block_content_setting">
+                        <!-- -------------------seeting user-------------------------- -->
+                        <div class="container_settings active">
+                            <h4 class="setting_name">Ваша информация</h4>
+                            <div class="wraper_setting_content">
+                                <div class="block_user_info">
+                                    <div class="user_full_name">
+                                        <div class="user_icon"></div>
+                                        <h3 class="user_name"></h3>
+                                    </div>
+                                    <div class="user_email">
+                                        <div class="user__email_icon"></div>
+                                        <h3 class="email"></h3>
+                                    </div>
+                                </div>
+                                <div class="block_change_setting">
+                                    <div class="content password">
+                                        <div class="informations change_password">
+                                            <div>
+                                                <h4>Сменить пароль</h4>
+                                                <p class="p_change">Сменить пароль для входа</p>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change see_hover">
+                                            <div class="castle"></div>
+                                            <div class="eye"></div>
+                                            <input type="password" name="password" placeholder="Изменить пароль..."
+                                                class="input_password">
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_password">
+                                        </div>
+                                    </div>
+                                    <div class="content delete_user_account">
+                                        <div class="informations">
+                                            <div>
+                                                <h4>Удалить свою учетную запись</h4>
+                                                <p class="p_change">Начать удаление учетной записи</p>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Вы действительно хотите безвозвратно удалить свою учетную
+                                                запись и всю историю обучения?</p>
+                                            <div class="block_button_delete_user">
+                                                <input type="button" value="Отмена" class="button_change cancel">
+                                                <input type="button" value="Удалить" class="button_change delete">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content report_error">
+                                        <div class="informations report_error">
+                                            <div>
+                                                <h4>Сообщить об ошибке</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <textarea name="textarea" rows="8"
+                                                placeholder="Введите сообщение об ошибке..."
+                                                class="textarea_mistake"></textarea>
+                                            <input type="button" value="Отправить" class="button_change send">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -------------------------------------------------------------------------- -->
+                                <div class="block_theme">
+                                    <div class="content theme">
+                                        <div class="informations theme">
+                                            <div>
+                                                <h4>Цветовая тема</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Выберете цветовую тему</p>
+                                            <div class="padding_checkbox">
+                                                <div class="wraper_checkbox radio">
+                                                    <input type="radio" name="theme" value="theme_light" class="radio_input"
+                                                        id="theme_light" checked>
+                                                    <label for="theme_light" class="radio_label">Светлая тема</label>
+                                                </div>
+                                                <div class="wraper_checkbox radio">
+                                                    <input type="radio" name="theme" value="theme_dark"
+                                                        class="radio_input darck reload" id="theme_dark">
+                                                    <label for="theme_dark" class="radio_label">Темная тема</label>
+                                                </div>
+                                            </div>
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_theme">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------------seeting game-------------------------- -->
+                        <div class="container_settings">
+                            <h4 class="setting_name">Настройки</h4>
+                            <div class="wraper_setting_content">
+                                <div class="block_words">
+                                    <div class="content number_words">
+                                        <div class="informations number_words">
+                                            <div>
+                                                <h4>Количество слов для изучения</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Введите количество слов</p>
+                                            <input type="number" value="10" min="10" class="max_word_card" id="maxNewWords">
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_number_words">
+                                        </div>
+                                    </div>
+                                    <div class="content number_cards">
+                                        <div class="informations number_cards">
+                                            <div>
+                                                <h4>Количество карточек для изучения</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Введите количество карточек</p>
+                                            <input type="number" value="10" min="10" class="max_word_card" id="maxCards">
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_number_cards">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- --------------------------------------------------------------------------------- -->
+                                <div class="block_info">
+                                    <div class="content info_card">
+                                        <div class="informations info_card">
+                                            <div>
+                                                <h4>Отображение информации на карточках</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Выберите необходимые элементы</p>
+                                            <div class="padding_checkbox">
+                                                <div class="wraper_checkbox">
+                                                    <label for="showWordTranslate">Перевод слова</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="showWordTranslate">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="showTextMeaning">Значение слова</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="showTextMeaning">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="showTextExample">Пример использования слова</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="showTextExample">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="showTranscription">Транскрипция слова</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="showTranscription">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="showImage">Картинка к изучаемому слову</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word" id="showImage">
+                                                </div>
+                                            </div>
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_info_card">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ------------------------------------------------------------------------------ -->
+                                <div class="block_setting_button">
+                                    <div class="content buttons_card">
+                                        <div class="informations buttons_card">
+                                            <div>
+                                                <h4>Отображение кнопок на карточках</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Выберете кнопки, отображаемые на карточках</p>
+                                            <div class="padding_checkbox">
+                                                <div class="wraper_checkbox">
+                                                    <label for="showAnswer">Показать ответ</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="showAnswer">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="isDifficultWords">Поместить слово в группу
+                                                        "Сложные"</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="isDifficultWords">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="isDelete">Удалить слово</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="isDelete">
+                                                </div>
+                                            </div>
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_button_cards">
+                                        </div>
+                                    </div>
+                                    <div class="content buttons_page">
+                                        <div class="informations buttons_page">
+                                            <div>
+                                                <h4>Отображение кнопок на странице</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Выберете кнопки, отображаемые на странице</p>
+                                            <div class="padding_checkbox">
+                                                <div class="wraper_checkbox">
+                                                    <label for="isAgain">Снова</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word" id="isAgain">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="isHard">Трудно</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word" id="isHard">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="isAlright">Хорошо</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word"
+                                                        id="isAlright">
+                                                </div>
+                                                <div class="wraper_checkbox">
+                                                    <label for="isEasy">Легко</label>
+                                                    <input type="checkbox" name="checkbox" class="checkbox_word" id="isEasy">
+                                                </div>
+                                            </div>
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_button_page">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ------------------------------------------------------------------------------------ -->
+                                <div class="block_repeat_word">
+                                    <div class="content learning_words">
+                                        <div class="informations learning_words">
+                                            <div>
+                                                <h4>Использование слов для изучения</h4>
+                                            </div>
+                                            <div class="button_arrow"></div>
+                                        </div>
+                                        <div class="change">
+                                            <p class="p_change">Выберете способ изучения слов</p>
+                                            <div class="padding_checkbox">
+                                                <div class="wraper_checkbox radio">
+                                                    <input type="radio" name="learning_words" value="repeat_word"
+                                                        id="repeat_word" class="radio_input" checked>
+                                                    <label for="repeat_word" class="radio_label">Использовать все слова</label>
+                                                </div>
+                                                <div class="wraper_checkbox radio">
+                                                    <input type="radio" name="learning_words" value="onlyDifficultWords"
+                                                        id="onlyDifficultWords" class="radio_input">
+                                                    <label for="onlyDifficultWords" class="radio_label">Повторять только сложные слова</label>
+                                                </div>
+                                                <div class="wraper_checkbox radio">
+                                                    <input type="radio" name="learning_words" value="no_repeat_word"
+                                                        id="no_repeat_word" class="radio_input">
+                                                    <label for="no_repeat_word" class="radio_label">Изучать только новые слова</label>
+                                                </div>
+                                            </div>
+                                            <input type="button" value="Сохранить изменения"
+                                                class="button_change save_learning_words">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

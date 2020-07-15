@@ -1,0 +1,44 @@
+.login_from__container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 400px));
+  grid-template-areas: "form text";
+  grid-template-rows: 500px;
+}
+
+.login_from__container .wrapper .login_form__header {
+  grid-area: text;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.login_from__container .wrapper .login_form__form_container {
+  grid-area: form;
+}
+
+nav.tab_navigation__container {
+  display: grid;
+}
+
+nav.tab_navigation__container .tab_navigation {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+nav.tab_navigation__container .tab_navigation li {
+  text-align: center;
+  background-color: #eee;
+}
+
+nav.tab_navigation__container .tab_navigation li.active {
+  background-color: transparent;
+}
+
+nav.tab_navigation__container .tab_navigation li a {
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+}

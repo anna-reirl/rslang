@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container-fluid"></header>
+    <main class="container-fluid main__container">
+    <div class="statistic card hide">
+        <div class="modal-header">
+        <h3 class="number-seria"></h3>
+        <h4 class="modal-title" id="exampleModalLabel">Серия завершена</h4>
+        </div>
+        <div class="modal-body numbers-statistics">
+        <div>
+            <span>Карточек завершено:</span>
+            <span></span>
+        </div>
+        <div>
+            <span>Правильные ответы:</span>
+            <span></span>
+        </div>
+        <div>
+            <span>Новые слова:</span>
+            <span></span>
+        </div>
+        <div>
+            <span>Самая длинная серия правильных ответов:</span>
+            <span></span>
+        </div>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary button-statistic" data-dismiss="modal">Дальше</button>
+        </div>
+    </div>
+
+    <div class="notification card hide">
+        <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel">RS Lang</h4>
+        <h6 class="modal-title" id="exampleModalLabel">Ура! На сегодня все.</h6>
+        </div>
+        <div class="modal-body">
+        <p>Лимит может быть увеличен в настройках, однако это может привести к увеличению слов на повторение</p>
+        <p>Для обучения сверх обычного расписания, нажмите кнопку 'Учить еще' ниже.</p>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary continue-card" data-dismiss="modal">Учить еще</button>
+        </div>
+    </div>       
+
+    <div class="app-wrapper"> 
+        <div class="card">
+        <img class="img-card">
+        <div class="context">
+            <span class="english-sentence"></span>
+            <span class="translate"></span>
+            <span class="english-sentence"></span>
+            <span class="translate"></span>
+        </div>
+        <div class="answer-background">
+            <div class="input-background">
+            <span class="answer-text"></span>
+            <input autofocus="true" type="text" class="answer-input">
+            </div>  
+            <p class="additional-content"></p>
+            <p class="translate additional-content"></p>
+        </div>  
+        <div class="buttons">
+            <button type="button" class="btn btn-primary next round">Далее</button>   
+            <button class="btn btn-primary show-answer-btn card-button hide">Показать ответ</button>
+            <button class="btn btn-primary delete-btn card-button hide">Удалить</button>
+            <button class="btn btn-primary difficult-words card-button hide">Сложные</button>
+        </div>
+        <div class="metodic-buttons">
+            <button class="btn btn-primary metodic">Снова</button>   
+            <button class="btn btn-primary metodic-button metodic">Трудно</button>
+            <button class="btn btn-primary metodic-button metodic">Хорошо</button>
+            <button class="btn btn-primary metodic-button metodic">Легко</button>
+        </div>
+        </div>
+        <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="change-btn">
+        <button class="btn btn-primary change-translate">Показать перевод</button>
+        <button class="btn btn-primary change-sound">Включить звук</button>
+        </div>
+    </div>
+</main>
+</body>
+</html>

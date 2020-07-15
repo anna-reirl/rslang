@@ -1,0 +1,148 @@
+.hide {
+    display: none !important;
+}
+
+.card {
+    font-family: Raleway;
+    padding: 10px;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 28rem;
+    margin: 0 auto;
+} 
+  
+.context {
+    display: flex;
+    flex-flow: wrap;
+    margin-top: 10px;
+    height: fit-content;
+    justify-content: space-between;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.translation-text{
+    font-size: 20px;
+}
+
+.img-card{
+    width: 100%;
+}
+
+.answer-input {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    border: none;
+    background-color: #cfdcee;
+    font-size: 18px;
+    outline: none;
+}
+
+.change-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+.answer-input:focus{
+    outline: none;
+}
+
+.answer-background {
+    position: relative;
+}
+
+.input-background {
+    position: relative;
+    width: fit-content; 
+}
+
+.answer-text {
+    font-size: 20px;
+    background-color: #cfdcee
+}
+
+.right-answer{
+    color: green;
+}
+
+.visiable{
+    visibility: visible !important;
+}
+
+
+.red{
+    color: red;
+}
+
+.unvisiable{
+    color: transparent;
+}
+
+.orange{
+    color: orange;
+}
+
+.opacity{
+    opacity: 0.5;
+}
+
+.translation{
+    margin-top: 25px;
+}
+
+
+.img-card{
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 0 5px rgba(0,0,0,0.7);
+}
+
+.buttons {
+    width: fit-content;
+}
+
+.progress { 
+    font-size: 1.75rem !important;
+    height: 2rem !important;
+    width: 80% !important;
+    margin: auto !important;
+    background-color: darkgrey !important;
+    margin-top: 10px !important;
+}
+
+.progress-bar {
+    overflow: visible !important;
+}
+
+.modal {
+    pointer-events: none;
+}
+
+.modal-header {
+    flex-direction: column !important;
+    margin: auto !important;
+    align-items: center !important;
+}
+
+.no-clickable {
+    pointer-events: none;
+}
+
+button {
+    margin-top: 10px !important;
+}
+
+.additional-content {
+    margin: 0 !important;
+}
+
+.context span {
+    width: 100%;
+}
+
+.transparent {
+    background-color: transparent;
+}

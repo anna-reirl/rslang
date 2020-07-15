@@ -1,0 +1,137 @@
+@import '../../assets/scss/style.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    background: #f6f5f7;
+    font-family: 'Nunito', sans-serif;
+    color: #666666;
+    font-size: 1.2rem;
+}
+
+.row {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 10px 23px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+    font-size: 15px;    
+    text-transform: uppercase;
+    background: #f5b08f;
+    border-width: 0;
+    box-shadow: 5px 5px 0 #532831;
+    outline: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.container.closed {
+    display: none;
+}
+.container {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+}
+
+.word {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    align-items: center;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12), 0 5px 5px -3px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.word .word-text{
+    position: relative;
+    border-left: 5px solid #4682B4;
+    padding: 10px;
+    color: #4682B4;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+p{
+    margin-top: 25px;
+    font-size: 18px;  
+}
+
+.word-other {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background: whitesmoke;
+    font: normal 13pt/15pt sans-serif;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.word > span {
+    flex: 1;
+}
+
+button {
+    border-radius: 5px;
+    padding: 10px 17px;
+    cursor: pointer;
+    color: #fff;
+    background: #3498db;
+    border:  #3498db;
+    font-size: 1rem;
+    font-weight: 100;
+    transition-duration: 0.5s;
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+.remove  {
+    margin-left: 10px;
+ 
+}
+
+.difficult {
+    margin-left: 10px;
+}
+
+.audio {
+    margin-left: 10px; 
+}
+
+.word-text {
+    vertical-align: text-bottom;
+}
+
+img {
+    width: 50%;
+}
+
+button {
+    margin-top: 5px;
+}
